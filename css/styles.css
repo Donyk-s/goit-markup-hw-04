@@ -245,24 +245,41 @@ padding: 94px 0;
 .specialty-list{
   width: calc((100% - 90px) / 4);
     margin-right: 30px;
-}
+    /*display: flex;
+    flex-direction: column;*/
+  }
+/*------ Особливост -----*/
 .specialty-list::before{
   content:"" ;
   height: 120px;
  display: block;
- background-size: contain;
+ 
+background-size: contain;
 background-repeat: no-repeat;
 background-position:center ;
- background: var(--team-background);
+background-color: #F5F4FA;
  border-radius: 4px;
-}
+ /*outline: 2px solid red;*/
 
-/*
-icon-antenna
- icon-clock
- icon-diagram
- icon-astronaut
-*/
+}
+.icon-antenna::before{
+ background-image: url(../images/antenna.svg); 
+ background-size: 70px 70px;
+}
+ .icon-clock::before{
+background-image: url(../images/clock.svg);
+background-size: 70px 70px;
+ }
+ .icon-diagram::before{
+  background-image: url(../images/diagram.svg);
+  background-size: 70px 70px ;
+ }
+
+ .icon-astronaut::before{
+background-image: url(../images/astronaut.svg);
+background-size: 70px 70px;
+ }
+
 .features-list :last-child{
   margin: 0;
 }
@@ -274,10 +291,11 @@ font-weight: 700;
 line-height: 1.14;
 text-transform: uppercase;
 color: var(--h-color);
+margin-top: 30px;
 margin-bottom: 10px;
 }
 
-
+/*-------- Чим ми займаємося ----*/
 .work{
   padding-bottom: 94px;
 }
@@ -292,11 +310,7 @@ margin-top: 10px;
   justify-content: space-around;
 gap: 30px;
 }
-/*
-.work-pick{
-  flex-basis: calc((100% - 60) / 3); 
-gap: 30px;
-}*/
+
 
 .work-title{
 font-weight: 700;
@@ -326,6 +340,28 @@ white-space: nowrap;
 margin-bottom: 50px;
 
 }
+.social-list-link{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.social-list-item{
+  width: 44px;
+  height: 44px;
+}
+
+ 
+.social-link{
+  width: 100%;
+  height: 100%;
+  /*background: rgb(76, 114, 86);*/
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .team-list {
   list-style: none;
   line-height: 1.18;
@@ -345,6 +381,7 @@ margin-bottom: 10px;
 font-size: 16px;
 text-align: center;
 color: var(--p-color);
+margin-bottom: 16px;
 }
 .retreat{
   padding-top: 30px;
@@ -478,14 +515,32 @@ padding-left: 15px;
 padding-top: 50px;
 }
 */
+.client{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .client-title{
 font-size: 36px;
-line-height: 1,16;
+line-height: 1.16;
 text-align: center;
 letter-spacing: 0.03em;
 color: var(--h-color);
+margin-bottom: 50px;
 }
 
 .client-item{
    list-style: none;
+   display: flex;
+   gap: 30px;
+}
+.client-list{
+  width: calc((100% - 150px) / 6);
+  height: 92px;
+}
+.client-link{
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #AFB1B8;
+border-radius: 4px;
 }
