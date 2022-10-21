@@ -345,22 +345,35 @@ margin-bottom: 50px;
   display: flex;
   justify-content: center;
   gap: 10px;
+
 }
 .social-list-item{
   width: 44px;
   height: 44px;
+    border-radius: 50%;
+   
 }
 
- 
 .social-link{
   width: 100%;
   height: 100%;
-  /*background: rgb(76, 114, 86);*/
-  border-radius: 50%;
+  background: #ffffff;
+border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  color:#AFB1B8 ;
 }
+.social-list-icon{
+  fill: currentColor;
+}
+
+.social-list-link :hover,
+.social-list-link :focus{
+  background-color: #2196F3;
+  color: #FFFFFF;
+}
+
 
 .team-list {
   list-style: none;
@@ -399,12 +412,21 @@ margin-bottom: 16px;
 }
 .contacts-list{
     list-style: none; 
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin: 70px;
+      
+     
+       
+      
 }
 .contacts-list :last-child{
   margin-bottom: 0;
 }
 .list-link{
   margin-bottom: 9px;
+  
 }
 
 .contacts-list :hover,
@@ -428,6 +450,7 @@ color: var(--background-header);
   font-style: normal;
    line-height: 1.71;
    box-sizing: border-box;
+   
 }
 
 /*------btn-filter Портфоліо---*/
@@ -506,15 +529,7 @@ margin-top: 4px;
   padding: 20px 24px;
 }
 /*----Позиціювання-----*/
-/*
-.potfol{
-  list-style: none;
-  flex-wrap: wrap;
- gap: 30px; 
-padding-left: 15px;
-padding-top: 50px;
-}
-*/
+
 .client{
   padding-top: 94px;
   padding-bottom: 94px;
@@ -541,6 +556,49 @@ margin-bottom: 50px;
   display: block;
   width: 100%;
   height: 100%;
+   display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid #AFB1B8;
 border-radius: 4px;
+color: #AFB1B8;
+}
+.client-lis-icon{
+  fill:currentColor;
+}
+.client-link:hover{
+  border-color: #2196F3;
+  color: #2196F3;
+}
+.social-list-link-footer{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-self: auto;
+    
+}
+.contacts-test{
+  display: flex;
+  align-items: baseline; 
+}
+
+.social-link-footer{
+  width: 100%;
+  height: 100%;
+  background:  rgba(255, 255, 255, 0.1);
+border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:#AFB1B8 ;
+}
+.social-list-icon{
+  fill: currentColor;
+}
+
+.social-list-link :hover,
+.social-list-link :focus{
+  background-color: #2196F3;
+  color: #FFFFFF;
 }
