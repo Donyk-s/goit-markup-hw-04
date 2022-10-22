@@ -29,6 +29,7 @@ button {
 }
 address {
   font-style: normal;
+ 
 }
 img {
   display: block;
@@ -245,8 +246,7 @@ padding: 94px 0;
 .specialty-list{
   width: calc((100% - 90px) / 4);
     margin-right: 30px;
-    /*display: flex;
-    flex-direction: column;*/
+    
   }
 /*------ Особливост -----*/
 .specialty-list::before{
@@ -402,25 +402,20 @@ margin-bottom: 16px;
 }
 
 /*------Footer----*/
-.address{
-  margin-top: 20px;
-}
+
 .contacts-footer{
   background-color: var(--hero-background);
   padding-top: 60px;
   padding-bottom: 60px;
 }
 .contacts-list{
-    list-style: none; 
+    list-style: none;
     display: flex;
-    flex-direction: column;
-    align-items: baseline;
-    margin: 70px;
-      
-     
-       
-      
+    flex-wrap: wrap;
+    flex-direction:column ;
+              
 }
+
 .contacts-list :last-child{
   margin-bottom: 0;
 }
@@ -440,7 +435,7 @@ margin-bottom: 16px;
  font-style: normal;
  line-height: 1.71;
 color: var(--background-header);
-
+display: block;
 
 }
 .mail-footer,
@@ -570,17 +565,56 @@ color: #AFB1B8;
   border-color: #2196F3;
   color: #2196F3;
 }
+
 .social-list-link-footer{
   list-style: none;
   display: flex;
-  justify-content: center;
   gap: 10px;
-  align-self: auto;
-    
+  margin-left: 70px;
+ 
+  
 }
+.footer-box{
+   display: flex;
+flex-wrap: wrap;
+align-items: flex-end;
+justify-content: flex-start;
+align-items: center;
+
+
+  
+}
+.footer-p{
+  display: flex;
+  text-transform: uppercase;
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14px;
+letter-spacing: 0.03em;
+color: #FFFFFF;
+justify-content: flex-start;
+align-items: center;
+margin-left: 140px;
+
+}
+.icon-logo-footer{
+  color:var(--hover-color);
+  text-decoration: none;
+font-family: Raleway, sans-serif; 
+font-weight: 700;
+font-size: 26px;
+line-height: 1.2;
+display: inline-block;
+  width: 145px;
+ 
+}
+
 .contacts-test{
   display: flex;
-  align-items: baseline; 
+  align-items: baseline;
+  justify-content: start;
+ 
 }
 
 .social-link-footer{
@@ -591,7 +625,12 @@ border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color:#AFB1B8 ;
+  color:#AFB1B8 ; 
+}
+
+.social-link-footer :hover{
+  background-color: #2196F3;
+  color: #FFFFFF;
 }
 .social-list-icon{
   fill: currentColor;
