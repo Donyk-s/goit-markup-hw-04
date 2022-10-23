@@ -636,6 +636,7 @@ display: inline-block;
   align-items: baseline;
   justify-content: start;
   margin-top: 20px;
+  align-items: normal;
 }
 
 .social-link-footer{
