@@ -157,7 +157,9 @@ margin-left: auto;
   padding-top: 32px;
   padding-bottom: 32px;
 }
-
+.icon-envelope{
+  fill: currentColor;
+}
   
  
 .tel{
@@ -169,7 +171,9 @@ margin-left: auto;
   padding-top: 32px;
   padding-bottom: 32px;
   }
-
+.icon-smartphone{
+  fill: currentColor;
+}
 .contacts :hover,
 .contacts :focus{
   color: var(--hover-color);
@@ -329,6 +333,8 @@ margin-bottom: 50px;
 .team-members{
  background-color: var(--background-header);
  text-align: center;
+ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
 }
 .team-title {
   font-weight: 700;
@@ -503,12 +509,26 @@ flex-basis: calc((100% - 60px) / 3);
 margin-top: 50px;
 }
 
+.portfol-link{
+  display: block;
+  text-decoration: none;
+}
+
+
+.portfol-link :hover,
+.portfol-link :focus{
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+ 0px 4px 4px
+ rgba(0, 0, 0, 0.06),
+ 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .portfol-title{
 font-weight: 700;
 font-size: 18px;
 line-height: 2;
 letter-spacing: 0.06em;
-
+color: var(--h-color);
 
 }
 .portfol-txt{
@@ -561,7 +581,8 @@ color: #AFB1B8;
 .client-lis-icon{
   fill:currentColor;
 }
-.client-link:hover{
+.client-link:hover,
+.client-link:focus{
   border-color: #2196F3;
   color: #2196F3;
 }
@@ -571,7 +592,7 @@ color: #AFB1B8;
   display: flex;
   gap: 10px;
   margin-left: 70px;
- 
+
   
 }
 .footer-box{
@@ -614,7 +635,7 @@ display: inline-block;
   display: flex;
   align-items: baseline;
   justify-content: start;
- 
+  margin-top: 20px;
 }
 
 .social-link-footer{
@@ -628,16 +649,13 @@ border-radius: 50%;
   color:#AFB1B8 ; 
 }
 
-.social-link-footer :hover{
-  background-color: #2196F3;
-  color: #FFFFFF;
-}
 .social-list-icon{
   fill: currentColor;
 }
 
-.social-list-link :hover,
-.social-list-link :focus{
+.social-list-link-footer :hover,
+.social-list-link-footer :focus{
   background-color: #2196F3;
   color: #FFFFFF;
 }
+
