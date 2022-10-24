@@ -29,7 +29,6 @@
   }
   address {
     font-style: normal;
-  
   }
   img {
     display: block;
@@ -94,7 +93,7 @@
       rgba(47, 48, 58, 0.4)),
     url("..//images/fon.jpg");
     max-width: 1600px;
-    height: 600px;
+    background-size: cover;
   background-repeat: no-repeat;
   margin-left: auto;
   margin-right: auto;
@@ -159,6 +158,7 @@
   }
   .icon-envelope{
     fill: currentColor;
+    margin-right: 10px;
   }
     
   
@@ -173,6 +173,7 @@
     }
   .icon-smartphone{
     fill: currentColor;
+    margin-right:10px ;
   }
   .contacts :hover,
   .contacts :focus{
@@ -184,7 +185,7 @@
   padding-top:200px;
   padding-bottom: 200px;
   text-align: center;
-  background-color: var(--hero-background);
+  background-color: #C4C4C4;
   }
 
 
@@ -584,6 +585,7 @@
   }
   .client-lis-icon{
     fill:currentColor;
+  
   }
   .client-link:hover,
   .client-link:focus{
@@ -595,22 +597,28 @@
     list-style: none;
     display: flex;
     gap: 10px;
-    margin-left: 70px;
-
-    
+  
   }
   .footer-box{
     display: flex;
   flex-wrap: wrap;
-  align-items: flex-end;
-  justify-content: flex-start;
-  align-items: center;
-
-
-    
+ flex-direction: column; 
   }
-  .footer-p{
+   .contacts-test{
     display: flex;
+     flex-wrap: wrap;
+ flex-direction: column; 
+ margin-left: 70px;
+ 
+  }
+   .footer-flex{
+    display: flex;
+    align-items: baseline;
+  }
+  
+  
+  .footer-p{
+    display: block;
     text-transform: uppercase;
   font-style: normal;
   font-weight: 700;
@@ -618,9 +626,7 @@
   line-height: 1.14px;
   letter-spacing: 0.03em;
   color: #FFFFFF;
-  justify-content: flex-start;
-  align-items: center;
-  margin-left: 140px;
+  margin-bottom: 20px;
 
   }
   .icon-logo-footer{
@@ -630,18 +636,13 @@
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-  display: inline-block;
+  display:block;
     width: 145px;
+    margin-bottom: 20px;
   
   }
 
-  .contacts-test{
-    display: flex;
-    align-items: baseline;
-    justify-content: start;
-    margin-top: 20px;
-    align-items: normal;
-  }
+
 
   .social-link-footer{
     width: 100%;
@@ -651,16 +652,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color:#AFB1B8 ; 
+    
   }
 
   .social-list-icon{
-    fill: currentColor;
+    fill: #FFFFFF;
   }
 
   .social-list-link-footer :hover,
   .social-list-link-footer :focus{
     background-color: #2196F3;
-    color: #FFFFFF;
+    
   }
 
