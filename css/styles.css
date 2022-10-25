@@ -152,9 +152,10 @@
     text-decoration: none;
     font-style: normal;
     line-height: 1.14;
-    display: block;
+  
     padding-top: 32px;
     padding-bottom: 32px;
+    display: flex;
   }
   .icon-envelope{
     fill: currentColor;
@@ -167,13 +168,15 @@
     text-decoration: none;
     font-style: normal;
     line-height: 1.14;
-    display: block;
+    
     padding-top: 32px;
     padding-bottom: 32px;
-    }
+    display: flex;
+  }
   .icon-smartphone{
     fill: currentColor;
     margin-right:10px ;
+   
   }
   .contacts :hover,
   .contacts :focus{
@@ -623,7 +626,7 @@
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   color: #FFFFFF;
   margin-bottom: 20px;
@@ -655,8 +658,8 @@
     
   }
 
-  .social-list-icon{
-    fill: #FFFFFF;
+  .social-list-icon-footer{
+    fill:#FFFFFF;
   }
 
   .social-list-link-footer :hover,
